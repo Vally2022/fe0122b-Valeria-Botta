@@ -1,0 +1,146 @@
+h1,
+h2,
+h3,
+h4,
+main,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: red;
+}
+
+header {
+    background-color: cornflowerblue;
+    text-align: center;
+    border-bottom: 5px solid rgb(55, 84, 138);
+    padding: 16px 6.25%;
+    margin-bottom: 25px;
+}
+
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    padding: 50px 6.25%
+}
+
+header h2 {
+    font-variant: small-caps;
+    padding: 65px 6.25%;
+    font-size: 16px;
+}
+
+header span {
+    background-color: white;
+    color: cornflowerblue;
+}
+
+
+main {
+    padding: 16px 6.25%;
+    margin: 10px;
+    list-style: 1.5px;
+}
+
+hr {
+    border: 1px dashed rgb(212, 167, 99)
+}
+
+main h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 1.5rem;
+    padding: 16px 6.25%;
+}
+
+main h3 {
+    padding: 16px 6.25%
+}
+
+main figure {
+    text-align: center;
+    padding: 10px;
+}
+
+main figure img {
+    margin: auto;
+    padding: 1.5vw;
+    border: 1px solid gray;
+}
+
+main address {
+    padding: 10px 6.25%;
+    font-style: normal;
+}
+
+main p {
+    padding: 10px;
+    margin: auto;
+}
+
+main blockquote {
+    font-style: italic;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(180, 175, 175);
+    border-radius: 15px;
+}
+
+main div {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+main div strong {
+    color: cornflowerblue;
+}
+
+main div mark {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+main h3 {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+section ul li {
+    margin-left: 25px;
+}
+
+main dl dt {
+    line-height: 20px;
+    margin-left: 6%;
+
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    border-top: cornflowerblue;
+    color: white;
+
+}
+
+footer p {
+    margin-top: -1.5rem;
+    line-height: 30px;
+    padding-top: 5px;
+}
+
+footer kbd {
+    color: yellow;
+}
+
+footer small {
+    color: gray;
+}
