@@ -324,6 +324,20 @@ footer a {
         padding: 2px;
     }
 
+    body h1 {
+        font-size: 1.8rem;
+    }
+
+    header {
+        padding: 0.8em;
+    }
+
+    header img{
+        width: 100px;
+        height: auto;
+        
+    }
+
     table {
         margin-left: auto;
         margin-right: auto;
@@ -349,8 +363,8 @@ footer a {
     }
 
     aside div {
-        width: 50%;
-        margin: auto;
+        width: 100%;
+        
     }
 
 }
@@ -360,6 +374,10 @@ footer a {
         font-size: 1.6rem;
     }
 
+    body {
+        margin: 2em;
+
+    }
 
     table {
         margin-left: auto;
@@ -383,7 +401,12 @@ footer a {
 
     aside div {
         width: 50%;
-        margin: auto;
+        margin: 15px auto;
+    }
+
+    .far {
+        font-size: 1.2em;
+        width: 50px;
     }
 }
 
@@ -392,14 +415,14 @@ footer a {
         font-size: 1.2vw;
     }
 
-    header {
-        font-size: 2vw;
-        padding: 2% 5% 5% 5%;
-        margin: auto;
+    body {
+        margin: 50px;
     }
 
-    header div {
-        margin-top: 20px;
+    header {
+        font-size: 1.3vw;
+        padding: 0.5em;
+        margin-top: -2.1em;
     }
 
     table {
@@ -428,7 +451,7 @@ footer a {
 
     aside div {
         width: 50%;
-        margin: auto;
+        margin: 15px auto;
     }
 
     aside div p:last-of-type {
@@ -437,5 +460,6 @@ footer a {
 
     .far {
         font-size: 50px;
+        width: 50px;
     }
 }
