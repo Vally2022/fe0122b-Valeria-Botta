@@ -11,6 +11,29 @@ body {
 * {box-sizing: border-box;}
 hr {display: none;} /* rimuove l'elemento */
 
+/* BUTTON FIXED */
+.toTop {
+    position: fixed;
+    bottom: 10px;
+    right: -7px;
+}
+.social {
+    position: fixed;
+    bottom: 20vh;
+    right: -7px;
+}
+.toTop a, .social a {
+    color: #c77ea2;
+    font-size: 4rem;
+    display: block;
+}
+    .social a {
+        color: rgb(45, 101, 185);
+    }
+.toTop .far, .social .far {
+    background: white;
+}
+
 /* HEADER */
 header {
     background: rgb(0,160,198);
@@ -23,61 +46,27 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
     position: sticky;
-    top: 14px;
-    width: 100%;
-    z-index: 2;
-}
-
-
-div.top img {
-    position: absolute;
-    top: -46px;
-}
-img#freccetta {
-    border: none;
-    display: inline-block;
-    position: absolute;
-    left: 20em;
-    top: 26em;
-    z-index: 4;
-    
-}
-
-img#callendar {
-    border: none;
-    display: inline-block;
-    position: fixed;
-    left: 20em;
-    top: 21em;
-    color: blueviolet;
-    z-index: 4;
-}
-img#segnopiu {
-    border: none;
-    display: inline-block;
-    position: absolute;
-    left: 19em;
-    top: 15em;
-    z-index: 4;
-    
+    top: 0;
+    z-index: 10;
 }
 header div img {
     margin-bottom: 20px;
-    border: none;
 }
 header nav ul {
     margin: 0;
 }
 header nav li {
     list-style: none;
-    display: inline;
+    display: inline-block;
+    margin-right: 10px;
 }
+    header nav li:last-child {
+        margin-right: 0;
+    }
 header nav li a {
     color: white;
     text-decoration: none;
-    margin-left: 5%;
 }
-
 header nav li a:hover {
     color: red;
 }
@@ -92,22 +81,11 @@ main {
     padding: 2em 1em;
     margin-bottom:1.5em ;
 }
-
-img#badge {
-    float: left;
-    margin: 1px 14px 0px 0px;
-    display: inline;
-    padding: 5px;
-    border: 5px solid rgb(126, 126, 199);
-    outline: 5px solid rgb(238, 80, 106);
-}
-p#parteUno {
-    display: inline;
-}
 section { 
     background-color: #e3e3e3;
-    padding: 1em;
+    padding: 2.5em 1em 1em;
     margin-bottom: 2em;
+    position: relative;
 }
 section h2 {
     text-align: center;
@@ -116,6 +94,13 @@ section h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 1em;
+    background-color: #a3a3a3;
+    position: absolute;
+    top: -0.5em;
+    left: 5%;
+    padding: 0 1em;
+    box-shadow: 1px 1px 2px #333;
+
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -131,6 +116,18 @@ p, address, ul, ol, dl, blockquote {
 h1 + p {
     color: #a0a0a0;
 }
+.imgLeft {
+    float: left;
+    margin-right: 20px;
+    border: 4px solid #00A0C6;
+    outline: 4px solid #a02571;
+    padding: 3px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 ul, ol {
     margin-left: 2em;
 }
@@ -184,7 +181,6 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
-
 input {
     padding: 5px;
     border: 0;
@@ -197,6 +193,7 @@ button {
     color: white;
     font-weight: bold;
 }
+
 /* ELEMENTI NELL' ASIDE */
 aside h2 {
     text-align: center;
@@ -220,17 +217,6 @@ aside div p:last-child {
 
 
 /* FOOTER */
-.novita {
-    background: #97a1a1;
-    display: inline;
-    padding: 2px 2px 2px -7px;
-    font-size: 18px;
-    box-shadow: 3px 2px 5px 1px grey;
-    padding: 2px 27px 0px 25px;
-    position: relative;
-    top: -19px;
-    z-index: 0;
-}
 footer {
     background: rgb(53,53,53);
     background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
@@ -240,7 +226,6 @@ footer {
     text-align: center;
     font-size: 1.2rem;
 }
-
 footer a {
     color: fuchsia;
 }
