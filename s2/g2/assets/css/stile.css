@@ -332,10 +332,10 @@ footer a {
         padding: 0.8em;
     }
 
-    header img{
+    header img {
         width: 100px;
         height: auto;
-        
+
     }
 
     table {
@@ -348,9 +348,8 @@ footer a {
         height: 350px;
     }
 
-    input,
-    form {
-        font-size: 2rem;
+    input {
+        font-size: 3vw;
     }
 
     input,
@@ -364,7 +363,7 @@ footer a {
 
     aside div {
         width: 100%;
-        
+
     }
 
 }
