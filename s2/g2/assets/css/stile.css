@@ -229,3 +229,37 @@ footer {
 footer a {
     color: fuchsia;
 }
+
+@media print {
+    *{
+        font-size: 23px ;
+    }
+    .social a {
+        display: none;
+    }
+    .toTop a {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+
+    main {
+        box-shadow: none;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    section {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
