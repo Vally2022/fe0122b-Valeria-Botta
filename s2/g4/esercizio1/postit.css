@@ -3,6 +3,11 @@ html {
     
 }
 
+@keyframes animazione {
+    0% (100%)
+    100% (200%)
+}
+
 .clearfix {
     background-color: gray;
     margin: 2%;
@@ -18,6 +23,10 @@ p {
     font-size: 1.3em;
 }
 
+div:hover {
+    transform: scale(1.1);
+}
+
 .postit {
     display: inline-flex;
     width: 1200px;
@@ -29,7 +38,7 @@ p {
 
 .uno {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(236, 237, 192, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(19, 19, 119, 1) 0%, rgba(189, 189, 163, 1) 0%, rgba(240, 241, 188, 1) 51%);
-    width: 202px;
+    width: 200px;
     height: 135px;
     display: flex;
     flex-direction: column;
