@@ -8,3 +8,39 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+html {
+    font-family: 'Bree Serif', serif;
+}
+
+@keyframes parole {
+    0% {100%}
+    50% {50%}
+    100% {0%}
+
+}
+
+div > p {
+    border: 3px solid grey;
+    padding: 3% 3%;
+    margin: 7% 26%;
+}
+
+i { 
+    color: grey;
+    display: block;
+    margin-left: 39%;
+    margin-top: -3%;
+    transition: ease;
+    animation-fill-mode: both;
+    
+
+}
+
+.parole {
+    animation-name: parole;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-duration: 7s;
+    
+    
+}
