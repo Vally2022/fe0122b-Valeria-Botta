@@ -1,5 +1,6 @@
 html {
     font-family: 'Indie Flower', cursive;
+    
 }
 
 .clearfix {
@@ -8,10 +9,19 @@ html {
     display: flex;
 }
 
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.3em;
+}
+
 .postit {
     display: inline-flex;
     width: 1200px;
-    height: 400px;
+    height: auto;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,6 +52,7 @@ html {
     align-items: center;
     margin: 3% 0;
     padding: 2%;
+    transform-origin: top;
     transform: rotateZ(11deg);
     box-shadow: 3px 3px 3px #3e3b3b;
 
@@ -57,6 +68,7 @@ html {
     align-items: center;
     margin: 3% 0;
     padding: 2%;
+    transform-origin: bottom;
     transform: rotateZ(350deg);
     box-shadow: 3px 3px 3px #3e3b3b;
 
@@ -64,70 +76,80 @@ html {
 
 .four {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(236, 237, 192, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(19, 19, 119, 1) 0%, rgba(189, 189, 163, 1) 0%, rgba(240, 241, 188, 1) 51%);
-    width: 200px;
-    height: 100px;
+    width: 202px;
+    height: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4% 3%;
+    margin: 3% 0;
     padding: 2%;
-    transform: rotateZ(348deg);
+    transform-origin: bottom;
+    transform: rotateZ(13deg);
+    box-shadow: 3px 3px 3px #3e3b3b;
 
 }
 
 .five {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(236, 237, 192, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(19, 19, 119, 1) 0%, rgba(189, 189, 163, 1) 0%, rgba(240, 241, 188, 1) 51%);
-    width: 200px;
-    height: 100px;
+    width: 202px;
+    height: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4% 3%;
+    margin: 3% 0;
     padding: 2%;
-    transform: rotateZ(348deg);
+    transform-origin: bottom;
+    transform: rotateZ(351deg);
+    box-shadow: 3px 3px 3px #3e3b3b;
 
 }
 
 .six {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(236, 237, 192, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(19, 19, 119, 1) 0%, rgba(189, 189, 163, 1) 0%, rgba(240, 241, 188, 1) 51%);
-    width: 200px;
-    height: 100px;
+    width: 202px;
+    height: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4% 3%;
+    margin: 3% 0;
     padding: 2%;
-    transform: rotateZ(348deg);
+    transform-origin: left;
+    transform: rotateZ(350deg);
+    box-shadow: 3px 3px 3px #3e3b3b;
 
 }
 
 .seven {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(236, 237, 192, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(19, 19, 119, 1) 0%, rgba(189, 189, 163, 1) 0%, rgba(240, 241, 188, 1) 51%);
-    width: 200px;
-    height: 100px;
+    width: 202px;
+    height: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4% 3%;
+    margin: 3% 0;
     padding: 2%;
-    transform: rotateZ(348deg);
+    transform-origin: center;
+    transform: rotateZ(358deg);
+    box-shadow: 3px 3px 3px #3e3b3b;
 
 }
 
 .otto {
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(236, 237, 192, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(19, 19, 119, 1) 0%, rgba(189, 189, 163, 1) 0%, rgba(240, 241, 188, 1) 51%);
-    width: 200px;
-    height: 100px;
+    width: 202px;
+    height: 135px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4% 3%;
+    margin: 3% 0;
     padding: 2%;
-    transform: rotateZ(348deg);
+    transform-origin: center;
+    transform: rotateZ(4deg);
+    box-shadow: 3px 3px 3px #3e3b3b;
 
 }
