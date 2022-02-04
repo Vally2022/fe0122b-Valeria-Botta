@@ -19,7 +19,7 @@
   <header class="top">
     <div class="main">
       <div class="mobile">
-        <p><img src="assets/images/logo.png" alt="logoEpicode" id="logoEpicode"></p>
+        <img src="assets/images/logo.png" alt="logoEpicode" id="logoEpicode">
         <input type="checkbox" i class="menuMobile" id="menuMobile">
         <label for="menuMobile" class="menuMobile"><i class="fas fa-ellipsis-h"></i></label>
       </div>
@@ -32,7 +32,7 @@
           <a href="http://127.0.0.1:5500/contatti.html">Contatti</a>
         </nav>
         <p>
-          <input type="button" value="Registrati" a href="#"></a>
+          <input type="button" value="Registrati" class="bottone">
       </div>
 
       </p>
@@ -43,7 +43,7 @@
     <div class="bloccoUno">
       <h1>Diventa un developer EPICO</h1>
       <p>Diventa un developer EPICO e ti troviamo noi il lavoro. Scommettiamo su di te: paghi metà corso, l'altra metà solo quando inizi a lavorare.</p>
-      <input type="button" value="chiediInfo" href="contatti.html">
+      <input type="button" value="chiediInfo" href="contatti.html" class="bottone">
     </div>
 
     <section class="bloccoDue">
@@ -78,7 +78,11 @@
 
     <h3>Ti piace ciò che vedi? Condividilo con i tuoi amici</h3>
 
-    <fieldset><form action="post" aria-placeholder="">Iscriviti alla nostra newsletter</form><input type="button" value="Va bene!"></fieldset>
+    <form method="post" action="newsletter.php">
+      Iscrivit alla nostra newsletter <br>
+      <input type="text" name="email"> <br>
+      <input type="button" value="Va bene!" class="bottone">
+    </form>
 
   </footer>
 

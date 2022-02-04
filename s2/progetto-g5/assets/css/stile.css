@@ -2,12 +2,16 @@
 
 html {
     font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 1.1em;
+
+}
+
+main {
+    font-size: 8px;
 }
 
 @keyframes menuNascosto {
-    0% { 100%
-        transition: right 5s ease
+    0% {
+        100% transition: right 5s ease
     }
 
 }
@@ -28,13 +32,33 @@ header {
     justify-content: space-around;
 }
 
-input {
+.bottone {
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 57, 130, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(103, 179, 216, 1) 0%, rgba(61, 57, 130, 1) 42%);
     color: white;
     font-weight: bold;
+    margin: auto;
+    align-items: center;
+    font-size: 7px;
+    border: none;
 }
 
 /* MAIN */
+
+h1 {
+    font-size: 10px;
+    text-shadow: 1px 1px 3px grey;
+    color: white;
+}
+
+.bloccoUno {
+    background-image: url(../images/banner.jpg);
+    background-position: right;
+    background-size: cover;
+    padding: 5% 0% 5% 2%;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
 
 /* FOOTER */
 
@@ -44,29 +68,44 @@ input {
     header {
         padding: 3% 1% 1% 1%;
         margin: -2% 0% 0% 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid black;
+    position: sticky;
+    top: 0px;
+    }
+
+    .mobile {
+        position: absolute;
     }
 
     img#logoEpicode {
         width: 6.5em;
-        margin-left: 185%;
+        margin-left: -197%;
     }
 
     nav {
-        margin-left: 33%;
+        margin: 3% -47% 1% 19%;
     }
 
     nav a {
+        background: white;
+        margin: 7% 0% 0% -13%;
         display: inline;
-        font-size: 0.9rem;
         text-decoration: none;
         color: black;
+        margin: 2%;
     }
 
-    input {
-        padding: 11% 32% 15% 32%;
-        margin: auto;
-        align-items: center;
+    .menuMobile {
+        display: none;
     }
+
+
 
 }
 
