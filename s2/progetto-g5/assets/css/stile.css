@@ -1,9 +1,5 @@
 /* IMPOSTAZIONI GENERALI */
 
-@keyframes menuNascosto {
-    0% {-133px}
-    100% {10px}
-}
 
 html {
     font-family: 'Fira Sans Condensed', sans-serif;
