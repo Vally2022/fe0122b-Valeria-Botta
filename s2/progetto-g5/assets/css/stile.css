@@ -6,6 +6,36 @@ html {
 
 /* HEADER */
 
+header {
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    padding: 3% 1% 1% 1%;
+    margin: -2% 0% 0% 0%;
+}
+
+img#logoEpicode {
+    width: 6.5em;
+    margin-left: 185%;
+}
+
+nav {
+    margin-left: 52%;
+    margin-right: 7%;
+
+}
+
+nav a {
+    margin: 8%;
+}
+.main {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
 /* MAIN */
 
 /* FOOTER */
