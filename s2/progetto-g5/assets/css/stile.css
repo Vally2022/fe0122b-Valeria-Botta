@@ -107,7 +107,7 @@ p {
     font-size: 1.5vw;
 }
 
-.fas, .far {
+.fas, .far, .fab {
     content: "\f141";
     font-size: 1.5rem;
     color: #e42424;
@@ -122,7 +122,13 @@ margin:5% 0% 4% 0%;
 }
 
 /* FOOTER */
-
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    margin: 5% 4% 4% 4%;
+}
 /* RESPONSIVE */
 
 @media screen and (min-width:1000px) {
@@ -201,6 +207,8 @@ margin:5% 0% 4% 0%;
     align-content: space-around;
     align-items: center;
     }
+
+
 }
 
 @media screen and (max-width:462px) {
@@ -254,4 +262,6 @@ margin:5% 0% 4% 0%;
 
 }
 
-@media screen and (min-width:463px) and (max-width:999px) {}
+@media screen and (min-width:463px) and (max-width:999px) {
+    
+}
