@@ -69,7 +69,7 @@ h3 {
     font-size: 1.1em;
 }
 
-h4 {}
+
 
 .bloccoUno {
     background-image: url(../images/banner.jpg);
@@ -84,8 +84,6 @@ h4 {}
     text-shadow: 9px 9px 3px black;
 
 }
-
-p {}
 
 .fas,
 .far,
@@ -117,31 +115,21 @@ p {}
 /* RESPONSIVE */
 
 @media screen and (max-width:462px) {
-    p {}
 
-    .fas {
-        position: absolute;
-        right: 68px;
-        top: 34px;
-    }
-
-    #menuMobile {
-        position: absolute;
-        right: -19px;
-        overflow: hidden;
-    }
-
-    .menuNascosto {
-        position: absolute;
+    header {
+        border-bottom: 1px solid black;
+        position: sticky;
+        top: -1px;
+        z-index: 3;
         background-color: white;
-        box-shadow: 1px 1px 3px grey;
-        padding: 2% 73% 25% 2%;
-        right: -406px;
-        /*top:8px per vederlo*/
-        top: 8px;
-        line-height: 1.5em;
-
+        box-shadow: 1px 1px 3px black;
     }
+
+    .main {
+        display: block;
+    padding: 2% 1% 0% 1%;
+    }
+
 
     .menuMobile:checked {
         animation-name: "menuMobile";
@@ -167,26 +155,15 @@ p {}
     }
 
 
-    .bloccoDue i {
-        position: absolute;
-        top: 95%;
-        margin: 0% 0% 0% 6%;
-    }
-
-
     .BloccoDueflex {
         border: 1px solid transparent;
         margin: 0% 28% 4% 24%;
         text-align: center;
     }
 
-    .bloccoQuattro {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-content: space-around;
-        align-items: center;
+    .Bloccoquattroflex {
+        text-align: center;
+        margin: 4% 31% 1% 20%;
     }
 
 
@@ -243,12 +220,6 @@ p {}
 
     }
 
-
-    .bloccoDue i {
-        position: absolute;
-        top: 95%;
-        margin: 0% 0% 0% 6%;
-    }
 
     .bloccoQuattro {
         display: flex;
@@ -312,12 +283,6 @@ p {}
     }
 
 
-    .bloccoDue i {
-        position: absolute;
-        top: 95%;
-        margin: 0% 0% 0% 6%;
-    }
-
     .bloccoQuattro {
         display: flex;
         flex-direction: row;
@@ -326,8 +291,5 @@ p {}
         align-content: space-around;
         align-items: center;
     }
-
-
-}
 
 }
