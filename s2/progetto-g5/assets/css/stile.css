@@ -7,6 +7,7 @@ html {
 
 main {
     font-size: 8px;
+    line-height: 1.5rem;
 }
 
 @keyframes menuNascosto {
@@ -71,6 +72,8 @@ h3 {
     text-align: left;
     color: white;
     font-size: 1.5vw;
+    color: white;
+    text-shadow: 9px 9px 3px black;
 
 }
 
@@ -135,16 +138,29 @@ p {
         right: 155px;
     }
 
-    .bloccoUno {
-    
+    .headerUno {
+        text-align: center;
+        padding: 3% 20% 4% 17%;
+        margin: 1% 1% 1% 9%;
     }
 
-    .bloccoUno section {
 
-        color: white;
-        text-shadow: 9px 9px 3px black;
+
+    .bloccoDue {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid transparent;
+    /* padding: 1% 6% 1% 7%; */
+    margin: 0% 19% 0% 20%;
+    column-gap: 48px;
     }
 
+    .bloccoDue h3 {
+        text-align: center;
+        
+    }
 }
 
 @media screen and (max-width:462px) {
@@ -201,4 +217,4 @@ p {
 
 }
 
-@media screen and (min-width:462px) and (max-width:999px) {}
+@media screen and (min-width:463px) and (max-width:999px) {}
