@@ -2,6 +2,14 @@
 
 html {
     font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.1em;
+}
+
+@keyframes menuNascosto {
+    0% { 100%
+        transition: right 5s ease
+    }
+
 }
 
 /* HEADER */
@@ -9,11 +17,6 @@ html {
 header {
     background-color: white;
     box-shadow: 1px 1px 3px black;
-}
-
-img#logoEpicode {
-    width: 6.5em;
-    margin-left: 185%;
 }
 
 .main {
@@ -25,7 +28,11 @@ img#logoEpicode {
     justify-content: space-around;
 }
 
-
+input {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(61, 57, 130, 1) 0%, rgba(0, 138, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(103, 179, 216, 1) 0%, rgba(61, 57, 130, 1) 42%);
+    color: white;
+    font-weight: bold;
+}
 
 /* MAIN */
 
@@ -37,6 +44,11 @@ img#logoEpicode {
     header {
         padding: 3% 1% 1% 1%;
         margin: -2% 0% 0% 0%;
+    }
+
+    img#logoEpicode {
+        width: 6.5em;
+        margin-left: 185%;
     }
 
     nav {
@@ -55,5 +67,59 @@ img#logoEpicode {
         margin: auto;
         align-items: center;
     }
+
+}
+
+@media screen and (max-width:462px) {
+    header {
+        padding: 5%
+    }
+
+
+    img#logoEpicode {
+        width: 25vw;
+        margin: 0% 1% 2% -67%;
+    }
+
+    .fas {
+        content: "\f141";
+        font-size: 1.5em;
+        color: #e42424;
+        position: absolute;
+        right: 68px;
+        top: 34px;
+    }
+
+    #menuMobile {
+        position: absolute;
+        right: -19px;
+        overflow: hidden;
+    }
+
+    .menuNascosto {
+        position: absolute;
+        background-color: white;
+        box-shadow: 1px 1px 3px grey;
+        padding: 2% 73% 25% 2%;
+        right: -406px;
+        /*top:8px per vederlo*/
+        top: 8px;
+        line-height: 1.5em;
+        font-size: 0.9em;
+
+    }
+
+
+
+    .menuMobile:checked {
+        animation-name: "menuMobile";
+        transition-duration: 0.5s;
+        right: 17px;
+    }
+
+    nav a {
+        display: block;
+    }
+
 
 }
