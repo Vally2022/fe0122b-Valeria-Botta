@@ -37,7 +37,8 @@ header {
 
 
 #laptop {
-    width: 400px;
+    width: 300px;
+    align-items: center;
 }
 
 
@@ -49,7 +50,7 @@ header {
     font-weight: bold;
     align-items: center;
     border: none;
-    padding: 1% 1% 1% 1%;
+    padding: 1% 3% 1% 3%;
     box-shadow: 1px 3px 4px grey;
 }
 
@@ -74,6 +75,10 @@ h2 {
 h3 {
     font-weight: bold;
     font-size: 1.1em;
+}
+
+h4 {
+    margin-bottom: 5%;
 }
 
 
@@ -115,9 +120,19 @@ h3 {
     column-gap: 16px;
     background-color: rgb(238, 238, 238);
     margin: 4% 0% 0% 0%;
-    padding: 2% 3% 9% 3%;
+    padding: 2% 25% 3% 15%;
 }
 
+form {
+    padding: 1% 0% 3% 5%;
+    margin: 1% 0% 5% 0%;
+}
+
+footer.bottone {
+    padding: 4% 75% 6% 4%;
+    text-align: center;
+    margin: -6% 1% 1% 1%;
+}
 /* RESPONSIVE */
 
 @media screen and (max-width:462px) {
@@ -125,10 +140,11 @@ h3 {
     header {
         border-bottom: 1px solid black;
         position: sticky;
-        top: -1px;
+        top: 0px;
         z-index: 3;
         background-color: white;
         box-shadow: 1px 1px 3px black;
+        
     }
 
     .main {
@@ -141,26 +157,29 @@ h3 {
         padding: 5% 1% 0% 1%;
     }
 
-   #menuNascosto {
-    display: none;
-    }
-
-    input.menuMobile {
-        position: absolute;
-    top: 50px;
-    }
-
-    #menuNascosto:checked {
-        border: 1px solid transparent;
+   .menuNascosto {
+    border: 1px solid transparent;
     background-color: white;
-    margin: 1% 1% 1% 1%;
-    padding: 6% 11% 16% 1%;
     position: absolute;
-display: block;
+    height: 60vw;
+    width: 60vw;
     box-shadow: 1px 4px 8px grey;
+    top: -361%;
+    transition: top 0.5s;
+    left: 39%;
+    z-index: 1;
+   }
+   .burger {
+       z-index: 2;
+   }
 
+    .menuMobile {
+        display: none;
     }
 
+    .menuMobile:checked ~ .menuNascosto {
+        top: 0%;
+    }
 
     nav a {
         display: block;
@@ -191,23 +210,36 @@ display: block;
         margin: 4% 31% 1% 20%;
     }
 
+    #laptop
+     {
+        padding: 1% 1% 1% 18%
+     }
+
+
+     .footer {
+        background-color: rgb(238, 238, 238);
+        margin: 4% 0% 0% 0%;
+        padding: 2% 25% 0% 15%;
+        text-align: inherit;
+        line-height: 1.5rem;
+        display: block;
+     }
+
 
 
 }
 
 @media screen and (min-width:768px) {
 
-    .top {
-        padding: 1% 0% 0% 0%;
+    .main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0% 3% 0% 17%;
     }
-
-
-
-    .mobile {
-        position: absolute;
-    }
-
-
 
     nav a {
         background: white;
@@ -216,6 +248,24 @@ display: block;
         text-decoration: none;
         color: black;
         margin: 2%;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    header nav {
+        margin: 1% 7% 2% -19%;
+    width: 226px;
+    }
+
+    .menuNascosto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 1% 0% 1% 35%;
+
     }
 
     .menuMobile {
@@ -258,26 +308,19 @@ display: block;
 
 }
 
-@media screen and (min-width:463px) {
+@media screen and (min-width:468px) {
     .top {
         padding: 1% 0% 0% 0%;
     }
+    
 
-
-
-    .mobile {
-        position: absolute;
+    .burger {
+        display: none;
     }
 
-
-
-    nav a {
-        background: white;
-        margin: 7% 0% 0% -13%;
-        display: inline;
-        text-decoration: none;
-        color: black;
-        margin: 2%;
+    header nav {
+        margin: 1% 7% 2% -19%;
+    width: 226px;
     }
 
     .menuMobile {
@@ -291,15 +334,15 @@ display: block;
         margin: 1% 3% 5% 9%;
     }
 
-    .bloccoDue {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        border: 1px solid transparent;
-        /* padding: 1% 6% 1% 7%; */
-        margin: 0% 19% 0% 20%;
-        column-gap: 48px;
+       .bloccoDue {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            border: 1px solid transparent;
+            /* padding: 1% 6% 1% 7%; */
+            margin: 0% 6% 0% 6%;
+            column-gap: 19px;
     }
 
     .bloccoDue h3 {
