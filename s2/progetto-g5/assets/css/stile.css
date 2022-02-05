@@ -39,11 +39,17 @@ header {
 
 }
 
-
+.paragrafo {
+    padding: 0% 14% 0% 14%;
+    line-height: 1.5em;
+}
 
 .laptop {
     width: 18em;
-    align-items: center;
+}
+
+.laptopUno {
+    
 }
 
 /* HEADER */
@@ -131,8 +137,38 @@ h4 {
 
 .chi-siamo {
     text-align: center;
+    line-height: 1.5rem;
 }
 
+#paragrafo {
+    padding: 1% 8% 11% 9%;
+    line-height: 1.5rem;
+}
+
+.chi-siamo h1{
+    color: black;
+    text-shadow: none;
+    text-align: center;
+    margin: 1%;
+    line-height: 1.5em;
+}
+
+.chi-siamo p {
+    margin: 4%;
+}
+
+.tabella {
+    display: flex;
+}
+thead {
+    background-color: rgb(210, 220, 231);
+    
+
+}
+
+tr:nth-child(even){
+    background-color: rgb(210, 220, 231);
+}
 /* FOOTER */
 .footer {
     display: flex;
@@ -217,6 +253,10 @@ footer.bottone {
         margin: 4% 31% 1% 20%;
     }
 
+    .desktop {
+        display: none;
+    }
+
     .footer {
         background-color: rgb(238, 238, 238);
         margin: 4% 0% 0% 0%;
@@ -226,9 +266,7 @@ footer.bottone {
         display: block;
     }
 
-    main div .laptop {
-        text-align: center;
-    }
+    
 
     div img {
         text-align: center;
@@ -278,6 +316,10 @@ footer.bottone {
         justify-content: space-around;
         align-content: space-around;
         align-items: center;
+    }
+
+    .mobie {
+        display: none;
     }
 
 
@@ -344,4 +386,10 @@ footer.bottone {
         align-items: center;
     }
 
+    .mobile{
+
+    
+
+    display: none;
+    }
 }
