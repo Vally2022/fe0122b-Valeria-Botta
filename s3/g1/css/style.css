@@ -1,0 +1,52 @@
+margin-bottom {
+  background-color: blue; }
+
+label {
+  background-color: rosybrown;
+  border: 1px solid rosybrown;
+  box-shadow: 2px 2px 2px gray;
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center; }
+
+.btn-pmo, .btn-sdo {
+  display: none; }
+
+.btn-pmo:checked ~ img {
+  top: 300px;
+  right: 500px; }
+
+body {
+  font-family: Arial, sans-serif;
+  border: 1px solid white;
+  text-align: center;
+  width: 1200px;
+  margin: 5%; }
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .main-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold; }
+  .main-menu ul {
+    display: flex;
+    column-gap: 10px;
+    margin-right: 50px; }
+  .main-menu li {
+    list-style: none; }
+
+body {
+  background-color: beige; }
+
+.showcase-content {
+  text-align: center;
+  border: 1px solid white; }
+
+img {
+  position: absolute;
+  top: -500px; }
