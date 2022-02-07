@@ -1,0 +1,14 @@
+{
+  "name": "g1",
+  "version": "1.0.0",
+  "description": "esercizio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "valeria",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
