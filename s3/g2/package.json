@@ -1,0 +1,14 @@
+{
+  "name": "g2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/main.css -w"
+  },
+  "author": "valeria",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
