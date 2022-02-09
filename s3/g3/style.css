@@ -1,0 +1,16 @@
+.esercizio1, .eser2, .eser3, .eser4, .eser6 {
+    border: 1px solid black;
+}
+
+.esercizio5 {
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+@media screen and (min-width:992px) {
+    .esercizio5:last-of-type {
+        display:flex;
+        justify-content: flex-end;
+    }
+    
+}
