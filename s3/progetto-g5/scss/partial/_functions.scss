@@ -1,0 +1,5 @@
+@function color-font ($fontColor) {
+    @if(lightness($bgDefault)<50) {
+        @return black;
+    }
+}

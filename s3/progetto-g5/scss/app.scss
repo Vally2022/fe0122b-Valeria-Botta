@@ -1,3 +1,5 @@
+@import "function";
+
 $bgDefault: rgb(2, 140, 176);
 $fontColor: white;
 $fontsize: bold;
@@ -31,4 +33,9 @@ ul li {
     &:checked {
         background-color: rgb(2, 2, 124);
     }
+}
+
+
+#partner {
+    width: 10px!important;
 }
