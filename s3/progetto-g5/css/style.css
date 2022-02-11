@@ -1,12 +1,13 @@
 .bg-primary {
   background-color: #028cb0 !important; }
 
-ul li {
-  color: white !important;
+.menu {
+  color: black !important;
   font-size: bold !important; }
 
 .row.maintop {
-  height: 406px; }
+  height: 100%;
+  padding-bottom: 10%; }
 
 .fontSize {
   font-size: 22px; }
@@ -20,3 +21,42 @@ ul li {
     box-shadow: 1px 2px 3px gray; }
   .btnMain:checked {
     background-color: #02027c; }
+
+.icon-next,
+.icon-prev {
+  color: black;
+  font-size: 35px; }
+  .icon-next:hover,
+  .icon-prev:hover {
+    font-size: 50px; }
+
+.partnerContainer {
+  height: 348px !important;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 18px; }
+
+.partner {
+  width: 314px !important; }
+
+@media screen and (max-width: 716px) {
+  .fontSize {
+    font-size: 0.9em; }
+  .partner {
+    width: 100px !important; }
+  .partnerContainer {
+    height: 148px !important; } }
+
+.recensione {
+  font-style: italic;
+  text-align: right;
+  padding: 10px; }
+
+.footer {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  background-color: #028cb0;
+  padding: 3%; }
