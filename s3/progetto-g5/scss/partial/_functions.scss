@@ -2,5 +2,10 @@
     @if(lightness($bgDefault)>50) {
         @return black;
     }
+
+    @else {
+        @return white;
+
+    }
 }
 

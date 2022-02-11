@@ -1,4 +1,7 @@
 @import "mixin";
+@import "partial/functions";
+
+
 
 $bgDefault: rgb(2, 140, 176);
 $fontColor: rgb(0, 0, 0);
@@ -7,7 +10,7 @@ $recensione: italic;
 $imageSize: 40px;
 
 .bg-primary {
-    @include bg-primary;
+    @include bgDefault;
 
 }
 
@@ -107,7 +110,7 @@ $imageSize: 40px;
 
 
 .footer {
-    @include bg-primary;
+    @include bgDefault;
     font-size: 19px;
     display: flex;
     align-items: flex-start;
