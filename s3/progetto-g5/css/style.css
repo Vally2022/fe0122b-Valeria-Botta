@@ -1,9 +1,17 @@
 .bg-primary {
-  background-color: #028cb0 !important; }
+  background-color: #028cb0; }
+
+.wordpress {
+  color: white; }
 
 .menu {
   color: black !important;
   font-size: bold !important; }
+
+.social {
+  display: flex;
+  column-gap: 10px;
+  color: white; }
 
 .row.maintop {
   height: 100%;
@@ -30,15 +38,14 @@
   .icon-prev:hover {
     font-size: 50px; }
 
-.partnerContainer {
-  height: 348px !important;
-  margin-top: 10px;
+.recensione {
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-evenly;
   padding-top: 18px; }
 
 .partner {
-  width: 314px !important; }
+  width: 100px !important; }
 
 @media screen and (max-width: 716px) {
   .fontSize {
@@ -46,17 +53,21 @@
   .partner {
     width: 100px !important; }
   .partnerContainer {
-    height: 148px !important; } }
-
-.recensione {
-  font-style: italic;
-  text-align: right;
-  padding: 10px; }
+    height: 148px !important; }
+  .recensione {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; } }
 
 .footer {
+  background-color: #028cb0;
   font-size: 19px;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
   column-gap: 10px;
-  background-color: #028cb0;
-  padding: 3%; }
+  padding-top: 2%; }

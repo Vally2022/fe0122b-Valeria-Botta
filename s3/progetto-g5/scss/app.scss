@@ -1,5 +1,4 @@
-@import "functions";
-@import "variables";
+@import "mixin";
 
 $bgDefault: rgb(2, 140, 176);
 $fontColor: rgb(0, 0, 0);
@@ -8,14 +7,24 @@ $recensione: italic;
 $imageSize: 40px;
 
 .bg-primary {
-    background-color: $bgDefault !important;
+    @include bg-primary;
 
+}
+
+.wordpress {
+    color: white;
 }
 
 .menu {
     color: $fontColor !important;
     font-size: $fontsize !important;
 
+}
+
+.social {
+    display: flex;
+    column-gap: 10px;
+    color: white;
 }
 
 .row.maintop {
@@ -53,18 +62,18 @@ $imageSize: 40px;
     }
 }
 
-.partnerContainer {
-    height: 348px !important;
-    margin-top: 10px;
+.recensione {
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
     padding-top: 18px;
+    
 
 
 }
 
 .partner {
-    width: 314px !important;
+    width: 100px !important;
 }
 
 @media screen and (max-width:716px) {
@@ -78,21 +87,32 @@ $imageSize: 40px;
     .partnerContainer {
         height: 148px !important;
     }  
+    .recensione {
+        margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;        
+        
+    }
+    .footer {
+        font-size: 11px;
+    }
 }
 
-.recensione {
-    font-style: $recensione;
-    text-align: right;
-    padding: 10px;
-}
+
 
 
 
 .footer {
+    @include bg-primary;
     font-size: 19px;
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     column-gap: 10px;
-    background-color: $bgDefault;
-    padding: 3%;
+    padding-top: 2%;
+
 }
