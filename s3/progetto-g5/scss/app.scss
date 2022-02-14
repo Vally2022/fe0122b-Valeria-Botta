@@ -1,6 +1,7 @@
-@import "mixin";
-@import "partial/functions";
-
+@import 'functions';
+@import 'mixin';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 
 
 $bgDefault: rgb(2, 140, 176);
@@ -118,4 +119,9 @@ $imageSize: 40px;
     column-gap: 10px;
     padding-top: 2%;
 
+}
+
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url(/fonts/bootstrap-icons.woff2);
 }
