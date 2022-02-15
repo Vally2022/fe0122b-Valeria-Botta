@@ -1,0 +1,44 @@
+.esempio1 {
+    border: 2px dotted black;
+    margin: 2% 60% 0% 0%;
+    padding: 2% 1% 2% 1%;
+    background-color: beige;
+    text-align: center;
+}
+
+.sottotitolo {
+    color: red;
+    border: 1px solid pink;
+    text-align: center;
+}
+
+.esempio2, .esempio3 {
+    border: 2px solid black;
+    margin: 2% 20% 1% 1%;
+    text-align: center;
+    margin: 2% 60% 0% 0%;
+}
+
+.calcolatrice {
+    margin: 1% 33% 1% 35%;
+    padding: 2% 1% 2% 2%;
+    border: 1px solid rgb(255, 218, 185);
+    width: 239px;
+    background-color: rgb(255, 218, 185);
+    box-shadow: 1px 2px 3px gray;
+    
+}
+
+.bottone {
+    background-color: bisque;
+    border: none;
+    box-shadow: 1px 2px 3px gray;
+    width: 50px;
+}
+
+.risultato {
+    width: 100%;
+    border: none;
+    background-color: rgb(221 219 219);
+    height: 65px;
+}

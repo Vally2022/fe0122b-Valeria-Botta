@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stile.css">
+    <title>Esercizio su javascript</title>
+</head>
+
+<body>
+    <div class="esempio1">
+        <h1>ESEMPIO VAR E LET</h1>
+        <h2 class="sottotitolo">Giochiamo</h2>
+        <p>qual'è il tuo nome?</p>
+        <input type="text" id="nome1">
+        <input type="button" value="invia" onclick="gioco()" id="gioco">
+
+
+        <p>quanti anni hai?</p>
+        <input type="number" id="eta">
+        <input type="button" onclick="gioco1()" value="invia">
+    </div>
+
+    <div class="esempio2">
+        <h1 class="sottotitolo">ESEMPIO CONST</h1>
+        <button id="numero2" onclick="esempio2()">Clicca</button>
+        <p id="numero"> </p>
+        <button id="testo2" onclick="esempio2()">Clicca</button>
+        <p id="testo"> </p>
+        <button id="const" onclick="esempio2()">Clicca</button>
+        <p id="const"> </p>
+
+
+    </div>
+
+
+    <div class="esempio3">
+
+        <h1 class="sottotitolo">Esempio di booleano</h1>
+        <p id="a">5</p><span>
+            <p id="b">9</p>
+        </span>
+        <p id="x"> </p>
+    </div>
+
+    <div class="esempio4">
+        <h1 class="sottotitolo">Calcolatrice</h1>
+
+
+        <div class="calcolatrice">
+
+            <table>
+
+                <caption><input type="text" id="risultato" readonly="readonly" class="risultato"></caption>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="submit" value="C" id="clear" class="bottone" onclick="cancella()">
+                        </td>
+                        <td>
+                            <input type="submit" id="%" value="%" class="bottone" onclick="n(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <input type="submit" id="7" value="7" class="bottone" onclick="n(this.id)">
+                    </td>
+                    <td>
+                        <input type="submit" id="8" value="8" class="bottone" onclick="n(this.id)">
+                    </td>
+                    <td>
+                        <input type="submit" id="9" value="9" class="bottone" onclick="n(this.id)">
+                    </td>
+                    <td>
+                        <input type="submit" id="*" value="*" class="bottone" onclick="n(this.id)">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" id="4" value="4" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="5" value="5" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="6" value="6" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="-" value="-" class="bottone" onclick="n(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" id="1" value="1" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="2" value="2" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="3" value="3" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="+" value="+" class="bottone" onclick="n(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" id="0" value="0" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="," value="," class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="/" value="/" class="bottone" onclick="n(this.id)">
+                        </td>
+                        <td>
+                            <input type="submit" id="=" value="=" class="bottone" onclick="operazione()">
+                        </td>
+                    </tr>
+                </tbody>
+                    
+               
+                    
+                
+                
+                
+
+            </table>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="scripts/myscripts.js"></script>
+</body>
+
+</html>
