@@ -34,14 +34,15 @@ if(Number(a>b)) {
 
 
 function n(dato){ 
-    document.getElementById("risultato").value+=dato;
+    document.getElementById("risultato").value += dato;
  }
  
  function operazione() { 
- document.getElementById("risultato").value=eval(document.getElementById("risultato").value); 
+ document.getElementById("risultato").value = eval(document.getElementById("risultato").value); 
  }
  
  function cancella() { 
-  document.getElementById("risultato").value=""; 
+  document.getElementById("risultato").value= ""; 
  }
+                        
 

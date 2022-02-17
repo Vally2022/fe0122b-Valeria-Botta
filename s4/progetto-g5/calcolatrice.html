@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stile.css">
+    <title>Calcolatrice</title>
+</head>
+<body>
+      <div class="calcolatrice">
+          <div class="display">
+                
+                <textarea id="risultato" cols="40simbolos="5" readonly></textarea>
+            </div>
+            <div class="tasti">
+                <input type="submit" value="c" id="c" onclick="cancella()">
+                <input type="submit" value="ac" id="c" onclick="cancella()">
+                <input type="submit" value="%" id="c" onclick="simbolo(this.id)">
+                <input type="submit" value="1" id="1" onclick="tasto(this.id)">
+                <input type="submit" value="2" id="2" onclick="tasto(this.id)">
+                <input type="submit" value="+" id="+" onclick="simbolo(this.id)">
+                <input type="submit" value="3" id="3" onclick="tasto(this.id)">
+                <input type="submit" value="4" id="4" onclick="tasto(this.id)">
+                <input type="submit" value="-" id="-" onclick="simbolo(this.id)">
+                <input type="submit" value="5" id="5" onclick="tasto(this.id)">
+                <input type="submit" value="6" id="6" onclick="tasto(this.id)">
+                <input type="submit" value="x" id="*" onclick="simbolo(this.id)">
+                <input type="submit" value="7" id="7" onclick="tasto(this.id)">
+                
+                <input type="submit" value="8" id="8" onclick="tasto(this.id)">
+                <input type="submit" value="/" id="/" onclick="simbolo(this.id)">
+                <input type="submit" value="9" id="9" onclick="tasto(this.id)">
+                <input type="submit" value="0" id="0" onclick="tasto(this.id)">
+                
+                
+                
+                
+                <input type="submit" value="=" id="=" onclick="uguale()">
+                
+            </div>
+      </div>
+
+    <script src="myscripts/script.js"></script>
+</body>
+</html>
