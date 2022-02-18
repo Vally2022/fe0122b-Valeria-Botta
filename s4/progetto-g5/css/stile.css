@@ -1,14 +1,15 @@
 .calcolatrice {
     border: 1px solid rgb(174, 140, 207);
     display: inline-block;
-}
-.display {
-    text-align: center;
-    margin: 1% 0% 11% 0%;
-    padding: 3% 0% 3% 0%;
+    padding: 3% 3% 3% 3%;
+    background-color: rgb(233, 226, 240);
     
 }
+.display {
+    margin-bottom: 15%;
+}
 
+    
 .tasti {
     display: grid;
     grid-template-columns: 25% 25% 25%;
@@ -18,9 +19,13 @@
     align-items: center;
     justify-items: stretch;
     column-gap: 6%;
-    margin-bottom: 19%;
+    margin: 1% 1% 8% 3%;
     
     
+}
+
+.uguale {
+    width: 222px;
 }
 
 .tasti input {
@@ -33,4 +38,9 @@
 }
 .tasti input:hover{
     box-shadow: none;
+    
+}
+
+.tasti input:checked {
+    background-color: rgb(161, 159, 163);
 }
