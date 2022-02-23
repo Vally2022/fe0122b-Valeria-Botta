@@ -1,0 +1,75 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+#btnMenu {
+    background-color: rgb(107, 107, 231);
+    width: 100px;
+    height: 100px;
+    text-align: center;    
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+#btnMenu:hover {
+    background-color: rgb(164, 164, 219);;
+}
+
+
+#dropdown {
+    list-style: none;
+    background-color: rgb(109, 43, 109);
+    color: white;
+    font-weight: bold;
+    width: 87px;
+    height: 105px;
+    padding: 23px;
+    line-height: 2em;
+    position: absolute;
+    top: 94px;   
+    
+}
+
+#menu li:hover {
+    background-color: rgb(219, 177, 219);
+    
+
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#titolo {
+    margin-top: 84px;
+    text-align: center;
+    
+}
+
+.ingrandisci {
+    font-size: 50px;
+}
+
+.color {
+    color: red;
+}
+
+.modifica {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nascondi {
+    display: none;
+}
+
+.barrato {
+    text-decoration: line-through;
+}
