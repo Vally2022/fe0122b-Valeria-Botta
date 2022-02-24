@@ -3,9 +3,11 @@ let big = document.querySelector('#ingrandisci')
 let color = document.querySelector('#colora')
 let set = document.querySelector('#modifica')
 let hide = document.querySelector('#nascondi')
-let list = document.querySelectorAll('li')
-
-
+let list1 = document.getElementById('lista1')
+let list2 = document.getElementById('lista2')
+let list3 = document.getElementById('lista3')
+let list4 = document.getElementById('lista4')
+/*let list = document.getElementById('lista');*/
 
 
 btn.addEventListener("click",function() {
@@ -34,8 +36,20 @@ hide.addEventListener('click', function() {
     page.classList.toggle('nascondi')
 })
 
-for (var i = 0; i < list.length; i +=1) {
-    list[i].addEventListener('click', function(i){
-        i.classList.toggle('barrato')
-    })
-}
+list1.addEventListener('click',function(){
+    this.classList.toggle('barrato')
+})
+
+list2.addEventListener('click',function(){
+    this.classList.toggle('barrato')
+})
+
+list3.addEventListener('click',function(){
+    this.classList.toggle('barrato')
+})
+
+list4.addEventListener('click',function(){
+    this.classList.toggle('barrato')
+})
+
+
