@@ -15,6 +15,7 @@ header {
     margin-bottom: 5%;
     color: rgb(228, 222, 222);
     text-shadow: 2px 3px 3px rgb(90, 90, 88);
+    
 }
 .container {
    text-align: center;
@@ -23,13 +24,14 @@ header {
     display: block;
 }
 input {
-    color:darkgray;
+    color:rgb(255, 0, 0);
     width: 640px;
     height: 30px;
     border:unset; 
     border-color: white;
     box-shadow: 2px 2px 3px gray;
     background-color: rgb(228, 222, 222);
+    font-size: 20px;
     
 }
 
@@ -41,6 +43,7 @@ button {
     color: cornsilk;
     font-weight: bold;
     cursor: pointer;
+    
 }
 button:hover {
     border-bottom: 3px solid darksalmon;
@@ -62,7 +65,7 @@ ul {
     list-style: none;    
     padding: 5%;
     text-align: start;
-    cursor: pointer;   
+    cursor: url('eraser-fill.svg'), auto;   
     
 }
 
