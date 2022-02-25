@@ -30,6 +30,7 @@ document.querySelector('#add').addEventListener('click', function(){
 
 function creaElemento(valore){
     let li = document.createElement('li');
+    li.classList.add('spesa')
     li.innerText = valore;
     document.querySelector('#lista').append(li)
 
@@ -57,6 +58,7 @@ function creaHTML(){
 
     db.forEach(function(elemento) {
         let li = document.createElement('li');
+        li.classList.add('spesa')
     li.innerText = elemento;
     document.querySelector('#lista').append(li)
     li.addEventListener('click', function(){
