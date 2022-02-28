@@ -1,0 +1,17 @@
+#form {
+    border: 3px solid red;
+    padding: 5%;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+#newsletter {
+    display: inline-block;
+    text-align: justify;
+}
+
+h1 {
+    color: red;
+    text-shadow: 3px 2px 4px pink;
+    font-weight: bold;
+}

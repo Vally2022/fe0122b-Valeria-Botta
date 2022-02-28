@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Newsletter</title>
+</head>
+
+<body>
+    <div id="form">
+        <h1>Iscriviti alla mia Newsletter</h1>
+        <form method="post" id="newsletter">
+            <label for="nome">
+                Nome
+            </label>
+            <input type="text" name="nome" id="nome" required="required">
+            <span id="testnome">
+
+            </span><br>
+            <label for="email">
+                Email
+            </label>
+            <input type="text" name="email" id="email" required="required">
+            <span id="testemail">
+
+            </span><br>
+            <label for="email2">
+                Ripeti l'email
+            </label>
+            <input type="text" name="email2" id="email2">
+            <span>
+
+            </span>
+        </form><br>
+        <button type="submit" id="invia">Invia</button>
+        <button type="submit" id="reset">Resetta i campi</button>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+
+
+        $(document).ready(function () {
+            let nome = $("#nome");
+            let email = $("#email");
+            let email2 = $("#email2")
+            $("#nome, #email, #email2").next().text('*')
+
+            
+            $("#reset").click(function () {
+                $("#nome,#email,#email2").submit().val(" ");
+            });
+
+            $("#invia").click(function (valido) {
+            if(nome.val() == '' || email.val() == ''){
+                $("#nome, #email").next().text("campo obbligatorio").fadeIn(1000);
+                return true;
+            }else if(email2.val() != email.val()) {
+                alert("l'email è sbagliata")
+            }          
+            else {
+                $("#form").submit().text('THANK YOU').css("color", "red");
+            };
+            
+        });
+
+        });
+    </script>
+</body>
+
+</html>
