@@ -59,10 +59,11 @@
 
             $("#invia").click(function (valido) {
             if(nome.val() == '' || email.val() == ''){
-                $("#nome, #email").next().text("campo obbligatorio").fadeIn(1000);
+                $("#nome, #email").next().text("campo obbligatorio").fadeOut(1000);
                 return true;
             }else if(email2.val() != email.val()) {
                 alert("l'email è sbagliata")
+                return true
             }          
             else {
                 $("#form").submit().text('THANK YOU').css("color", "red");
