@@ -30,7 +30,7 @@ $(()=>{
             },1000)
         }else {
             carosello.animate({
-                left: "+=1200px"
+                
             },1000)
         }
         

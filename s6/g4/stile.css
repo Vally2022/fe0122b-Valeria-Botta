@@ -1,0 +1,25 @@
+#container {
+    width: 500px;
+    border: 2px solid violet;
+    position: absolute;
+
+}
+
+#progressBar {
+    width: 1%;
+    height: 30px;
+    background-color: pink;
+    position: relative;
+    
+    
+}
+
+#btnBarra, #reset {
+    margin-top: 50px;
+    background-color: palevioletred;
+    border: none;
+    box-shadow: 2px 3px 4px pink;
+    padding: 1%;
+    color: white;
+    font-weight: bold;
+}
