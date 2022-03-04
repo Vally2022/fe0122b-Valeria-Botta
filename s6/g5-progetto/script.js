@@ -25,6 +25,7 @@ $(document).ready(function () {
         if (immaginiCliccate.length < 2) {
 
             $(this).children().show()
+            $(this).addClass("rotea")
 
             let imgId = $(this).children().attr("id");
             let imgSrc = $(this).children().attr("src");
@@ -38,7 +39,7 @@ $(document).ready(function () {
 
 
             if (immaginiCliccate.length == 2) {
-
+                $(this).addClass("rotea")
                 if (immaginiCliccate[0].src == immaginiCliccate[1].src) {
                     $('#'+immaginiCliccate[0].id).css('cursor', 'block')
                     $('#'+immaginiCliccate[1].id).css('cursor', 'block')

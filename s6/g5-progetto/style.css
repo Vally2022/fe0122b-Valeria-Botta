@@ -29,17 +29,19 @@ h2 {
 }
 
 .images {
-    background: rgba(0,218,219,1);
+    background-image: url("img/pattern-bungee.jpg");
     width: 140px;
     height: 140px;
     margin: 5px;
     cursor: pointer;
     display: inline-block;
     border-radius: 10px;
+    border: 2px solid pink;
     position: relative;
 }
 
 .images img {
+    background-color: pink;
     padding: 5px;
     display: none;
     position: absolute;
@@ -62,4 +64,18 @@ h2 {
     font-weight: bold;
     border: none;
     cursor: pointer;
+}
+
+.rotea{
+    
+    animation-name: rotea;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    
+}
+
+@keyframes rotea {
+    0%{transform: rotateY(0deg);}
+    50%{transform: rotateY(180deg);}
+    100%{transform: rotateY(360deg);}
 }
