@@ -26,6 +26,7 @@ body {
 .numclicks,
 h2 {
     text-align: left;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .images {

@@ -18,9 +18,10 @@ $(document).ready(function () {
         let clicks = $("#clicks").text();
         clicks++
         $("#clicks").text(clicks)
-        /*if (clicks >= 20){
+        if (clicks >= 20 && clicks == 20){
             alert("non ci siamo!")
-        }*/
+        }
+
 
         if (immaginiCliccate.length < 2) {
 
@@ -52,10 +53,10 @@ $(document).ready(function () {
                     }, 700)
                 }
             }
-
+            
 
         }
-        console.log(immaginiCliccate)
+       
     })
 
 
