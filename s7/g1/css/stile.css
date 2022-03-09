@@ -2,35 +2,46 @@ body {
     background-image: url('../img/sfondo.jpg');
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
+#form {
+    position: relative;
+}
+
 form {
+    /*background-image: url(../img/sfondo2.jpg);
+    background-size: cover;
+    background-position-y: -132px;
+    background-position-x: center;
+    color: white;
+    text-shadow: 3px 2px 3px fuchsia;*/
     width: 500px;
     height: 500px;
     padding: 5%;
-    box-shadow: 2px 3px 5px gray;
+    box-shadow: 2px 3px 5px grey;
     margin: 5%;
     border-radius: 20px;
     background-color: white;
     
+    
+
         
 }
 
-#check {
+span {
     display: flex;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: red;
 }
-#span {
-    display: flex;
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: red;
-}
+
 
 div {
     font-size: 18px;

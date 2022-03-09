@@ -21,6 +21,7 @@ btnInvio.addEventListener('click', function (e) {
     var controllo = true //variabile di controllo
     var pippo1 = document.getElementById('user1').value;
     var pippo3 = document.getElementById('psw').value;
+    
 
 
 
@@ -36,10 +37,14 @@ btnInvio.addEventListener('click', function (e) {
 
         else {
             elemento.style.border = ""
-            document.querySelectorAll('.pippo').value ='';
+            document.querySelectorAll('.pippo').value = '';
+
         }
 
+
     });
+
+
 
 
     if (email1 != email2) {
@@ -52,9 +57,20 @@ btnInvio.addEventListener('click', function (e) {
 
     }
     if (controllo) {
-        var nuovoUtente = new User(pippo1, email1, pippo3); //blocco di sicurezza
-        memorizzaDati(nuovoUtente)
+        var nuovoUtente = new User(pippo1, email1, pippo3); //blocco di sicurezza      
+        /*document.getElementsByClassName('form-control').value = ''*/
+
+        let utenteSalvato = memorizzaDati(nuovoUtente);
+
+
+        if (utenteSalvato) {
+            setTimeout(function () {
+                window.location = 'login.html'
+            }, 2000)
+        }
     }
+
+
 
 })
 
@@ -75,15 +91,29 @@ function memorizzaDati(newUser) {
     let dataBase = elementiSalvati == null ? [] : JSON.parse(elementiSalvati);
     //qui inserisci il controllo per verificare se l'email inserita dall'utente appartiene ad utente già registrato
     //preferibilmente utilizza il metodo find()
-    
-    var target = dataBase.find( oldUser => oldUser.email == newUser.email)            
-    
-     if (target == undefined){   
-    dataBase.push(newUser);
-    localStorage.setItem('utenti', JSON.stringify(dataBase))
-     }
-     else {
-         document.getElementById('check').innerHTML = 'Email esistente'
-     }
+
+    var target = dataBase.find(oldUser => oldUser.email == newUser.email || oldUser.username == newUser.username)
+
+    if (target == undefined) {
+
+        dataBase.push(newUser);
+        localStorage.setItem('utenti', JSON.stringify(dataBase))
+        return true
+
+    }
+    else {
+        document.getElementById('check').innerHTML = 'UTENTE ESISTENTE'
+        return false
+    }
+    /*var target2 = dataBase.find( oldUser2 => oldUser2.username == newUser.username)            
+   
+    if (target2 == undefined){   
+   dataBase.push(newUser);
+   localStorage.setItem('utenti', JSON.stringify(dataBase))
+    }
+    else {
+        document.getElementById('check2').innerHTML = 'Username esistente'
+    }*/
+
 }
 
