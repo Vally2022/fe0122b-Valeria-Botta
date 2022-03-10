@@ -1,0 +1,55 @@
+body {
+    background-image: url('../img/work.jpg');
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+form {
+    /*background-image: url(../img/sfondo2.jpg);
+    background-size: cover;
+    background-position-y: -132px;
+    background-position-x: center;
+    color: white;
+    text-shadow: 3px 2px 3px fuchsia;*/
+    width: 500px;
+    height: 500px;
+    padding: 5%;
+    box-shadow: 2px 3px 5px grey;
+    margin: 5%;
+    border-radius: 20px;
+    background-color: white;
+    opacity:0;
+    animation-name: form;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+       
+}
+
+span {
+    display: flex;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: red;
+}
+
+
+.pippo {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes form {
+    0%{opacity: 0;}
+    20%{opacity: 0.2;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+    
+}
