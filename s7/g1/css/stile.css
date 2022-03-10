@@ -1,5 +1,5 @@
 body {
-    background-image: url('../img/sfondo.jpg');
+    background-image: url('../img/work.jpg');
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
@@ -10,9 +10,6 @@ body {
 
 }
 
-#form {
-    position: relative;
-}
 
 form {
     /*background-image: url(../img/sfondo2.jpg);
@@ -28,10 +25,11 @@ form {
     margin: 5%;
     border-radius: 20px;
     background-color: white;
-    
-    
-
-        
+    opacity:0;
+    animation-name: form;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+       
 }
 
 span {
@@ -43,13 +41,15 @@ span {
 }
 
 
-div {
-    font-size: 18px;
-    
-}
-
 .pippo {
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes form {
+    0%{opacity: 0;}
+    20%{opacity: 0.2;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+    
+}

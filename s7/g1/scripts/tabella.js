@@ -14,6 +14,7 @@ dataBase.forEach(function (elemento) {
     let row = document.createElement('td')
     let row1 = document.createElement('td')
     let row2 = document.createElement('td')
+    let row3 = document.createElement('td')
     var btn = document.createElement('button')
     
     
@@ -23,23 +24,28 @@ dataBase.forEach(function (elemento) {
 
     
     tabella.append(contenitore);
-    contenitore.append(row,row1,row2,btn)
+    row3.append(btn)
+    contenitore.append(row,row1,row2,row3)
 
     
-    btn.innerHTML = "elimina"
-    
+    btn.innerHTML = 'Elimina'
+    btn.classList.add('btn','btn-outline-primary','btn-primary', 'text-white', 'btn-sm')
+    btn.setAttribute('data-email',elemento.email)
     contenitore.append(btn)
     btn.addEventListener('click',function(){
+        var deleteMail = this.getAttribute('data-email')
         contenitore.remove()
-        eliminaRiga()
+        eliminaRiga(deleteMail)
     })
     
 
 });
 
-function eliminaRiga(elemento){
-        var indice = dataBase.indexOf(elemento)        
-        dataBase.splice(indice,1)
+function eliminaRiga(email){
+        var indice = dataBase.findIndex(u => u.email == email)  
+        console.log(indice)      
+        dataBase.splice(indice,1)        
         localStorage.setItem('utenti', JSON.stringify(dataBase))
 }
+
 

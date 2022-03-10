@@ -1,5 +1,21 @@
+body {
+    background-color: rgb(218, 213, 213);
+}
+.tabella {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin: 5%;
+    border-style: double;
+    border-color: aquamarine;
+    padding: 5%;
+    background-color: azure;
+    font-size: 13px;
+}
+
 button {
     border: none;
     box-shadow: 2px 3px azure;
-    font-size: 10px;
+    font-size: 9px;
+    background-color: transparent;
 }
