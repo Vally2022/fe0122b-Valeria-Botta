@@ -24,31 +24,52 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
                 }
             }
 
-            let btnModif = document.createElement('button')
+
+            let btnModif = document.createElement('a')
             btnModif.innerHTML = 'Modifica'
             modCella.append(btnModif)
+            btnModif.href = '/form.html?id='+ element.id
+            console.log(btnModif)
             let btnCanc = document.createElement('button')
-            btnCanc.setAttribute('data-email', element.email)
+            
             btnCanc.innerHTML = 'Elimina'
             cancCella.append(btnCanc)
 
+
+
+
             btnCanc.addEventListener('click', function () {
-                var deleteEmail = this.getAttribute('data-email')
-                row.remove()
-                elimina(deleteEmail)
+                
+                
+                
+                fetch('https://sofin.wp-admin.it/public/api/v1/user/' + element.id, {
+                    
+                    method: 'DELETE',
+                    headers:{
+                        'Content-Type':'application/json'
+                    },
+                    
+                })
+                
+                .then(response => { 
+                    return response.text()
+                })
+                .then(data =>
+                    {console.log(data)
+                    row.remove()
+                })
+
             })
 
-
-        });
-        function elimina(email) {
-            var indice = data.findIndex(u => u.email == email)
-            data.splice(indice, 1);
+            
 
 
 
-
-        }
-
+        })        
 
 
     })
+
+
+
+
