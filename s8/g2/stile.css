@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 20%;
+    background-color: bisque;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    padding: 2%;
+    margin-bottom: 5%;
+    box-shadow: 2px 3px 3px rgb(240, 165, 138);
+}
+
+button:hover {
+    color: white;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+
+input {
+    height: 30px;
+    margin-bottom: 2%;
+}
