@@ -1,0 +1,27 @@
+body {
+    background-image: url('shop.jpg');
+    background-size: cover;
+    text-align: center;
+}
+#bacinella {
+    border: 1px solid black;
+    margin: 5%;
+    background-color: rgba(255, 255, 255, 0.788);
+}
+#bacinella {
+    padding: 2%;
+}
+h1 {
+    text-align: center;
+}
+button {
+    background-color: burlywood;
+    border: none;
+    box-shadow: 2px 2px 3px brown;
+   
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
