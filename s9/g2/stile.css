@@ -1,0 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+#titolo_audio {
+    position: relative;;
+    }
+h4 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(39, 38, 38);
+    height: auto;
+    margin: -5% -2% 3% -2%;
+    padding: 5%;
+    font-size: 20px;
+}
+#container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container_audio{
+    border: 1px solid rgb(187, 182, 182);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    margin-right: 2%;
+    margin-left: 2%;
+    align-content: center;
+    padding: 1%;
+}
+
+
+audio {
+    width: 250px;
+    height: 30px;
+}
+
+#container_video {
+    border: 1px solid rgb(187, 182, 182);
+    padding: 2%;
+    text-align: center;
+}
+
+video {
+    width: 400px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stile.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="barra">
+        <h4>
+            Media Player
+        </h4>
+    </div>
+    <div id="container">
+        
+        <div id="container_audio">
+            <span class="titolo">
+                <h5 id="titolo_audio">Clicca la traccia audio da riprodurre</h5>
+            </span>
+            <hr>
+            <div id="audio"></div>
+            <audio controls autoplay src="" id="audioPlayer">
+                <source type="audio/mp3">
+            </audio>
+        </div>
+        <div id="container_video">
+            <span class="titolo">
+                <h5>Clicca il video da riprodurre</h5>
+            </span>
+            <div id="video"></div>
+            <video controls src="" id="videoPlayer">
+                <source>
+            </video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
