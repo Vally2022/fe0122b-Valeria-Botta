@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Post 1",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat enim eget aliquam volutpat. Nulla tristique leo ac metus lobortis, nec imperdiet magna laoreet. Pellentesque condimentum luctus mi, non faucibus erat fermentum vitae. In rhoncus mollis consectetur. Proin posuere vitae arcu eget convallis. Cras et tempus nibh. Suspendisse potenti. Phasellus porta lacinia mauris non mollis. Aenean aliquam turpis ultrices, pharetra eros a, volutpat diam.",
+        "active": true
+
+    },
+    {
+        "id": 2,
+        "title": "Post 2",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat enim eget aliquam volutpat. Nulla tristique leo ac metus lobortis, nec imperdiet magna laoreet. Pellentesque condimentum luctus mi, non faucibus erat fermentum vitae. In rhoncus mollis consectetur. Proin posuere vitae arcu eget convallis. Cras et tempus nibh. Suspendisse potenti. Phasellus porta lacinia mauris non mollis. Aenean aliquam turpis ultrices, pharetra eros a, volutpat diam.",
+        "active": true
+
+    },
+    {
+        "id": 3,
+        "title": "Post 3",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat enim eget aliquam volutpat. Nulla tristique leo ac metus lobortis, nec imperdiet magna laoreet. Pellentesque condimentum luctus mi, non faucibus erat fermentum vitae. In rhoncus mollis consectetur. Proin posuere vitae arcu eget convallis. Cras et tempus nibh. Suspendisse potenti. Phasellus porta lacinia mauris non mollis. Aenean aliquam turpis ultrices, pharetra eros a, volutpat diam.",
+        "active": false
+
+    },
+    {
+        "id": 4,
+        "title": "Post 4",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat enim eget aliquam volutpat. Nulla tristique leo ac metus lobortis, nec imperdiet magna laoreet. Pellentesque condimentum luctus mi, non faucibus erat fermentum vitae. In rhoncus mollis consectetur. Proin posuere vitae arcu eget convallis. Cras et tempus nibh. Suspendisse potenti. Phasellus porta lacinia mauris non mollis. Aenean aliquam turpis ultrices, pharetra eros a, volutpat diam.",
+        "active": false
+
+    },
+    {
+        "id": 5,
+        "title": "Post 5",
+        "body":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat enim eget aliquam volutpat. Nulla tristique leo ac metus lobortis, nec imperdiet magna laoreet. Pellentesque condimentum luctus mi, non faucibus erat fermentum vitae. In rhoncus mollis consectetur. Proin posuere vitae arcu eget convallis. Cras et tempus nibh. Suspendisse potenti. Phasellus porta lacinia mauris non mollis. Aenean aliquam turpis ultrices, pharetra eros a, volutpat diam.",
+        "active": true
+
+    }
+]
